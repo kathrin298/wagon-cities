@@ -1,10 +1,6 @@
-import cities from '../cities';
-
-function setCities() {
+export default function setActiveCity(city) {
   return {
-    type: 'SET_CITIES',
-    payload: cities
+    type: 'CITY_SELECTED',
+    payload: city
   };
 }
-
-export default setCities;
